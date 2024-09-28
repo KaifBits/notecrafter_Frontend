@@ -43,7 +43,7 @@ const RightslideBook = ({ side, setside,refresh,setRefresh }) => {
     return (
         <div className={`absolute top-0 left-0 pl-3 h-screen border border-gray-400 duration-500 bg-white ${side ? 'w-0' : 'w-1/2'} overflow-y-auto`}>
             <button onClick={() => setside(true)}>
-                <i className="ri-arrow-keft-line"></i>
+                <i className="ri-arrow-left-line"></i>
             </button>
 
             <form onSubmit={handleSubmit} className="flex flex-col items-start space-y-8 space-x-3 h-auto max-h-full">
