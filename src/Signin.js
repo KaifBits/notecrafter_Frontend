@@ -23,7 +23,7 @@ const Signin = () => {
             authLogin(); // Call the login function from AuthContext
             setTimeout(() => {
                 navigate("/home");
-            }, 3000);
+            }, 1500);
         } catch (error) {
             setErrormsg("Your password is wrong! Please check it.");
             console.log("The actual error is: ", error);
