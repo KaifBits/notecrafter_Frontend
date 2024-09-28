@@ -5,7 +5,7 @@ import axios from 'axios';
 const YearlyPlans = () => {
   const [goal, setGoal] = useState(''); // State to hold the current input value
   const [goalsList, setGoalsList] = useState([]); // State to hold the list of goals
-   const[name,setname]=useState(localStorage.getItem("username"));
+   const[name]=useState(localStorage.getItem("username"));
   const handleInputChange = (event) => {
     setGoal(event.target.value); // Update state as the user types
   };

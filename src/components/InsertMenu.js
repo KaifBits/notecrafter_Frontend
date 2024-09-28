@@ -9,7 +9,7 @@ const InsertMenu = ({ side, setside,refresh,setRefresh }) => {
     const [steps, setSteps] = useState([]);
     const [stepInput, setStepInput] = useState(false);
     const [text, setText] = useState("");
-    const[aname,setName]=useState(localStorage.getItem("username"));
+    const aname=localStorage.getItem("username");
     
     const handleIngredientsChange = (e) => {
         const arr = e.target.value.split(",").map(item => item.trim());
@@ -19,15 +19,11 @@ const InsertMenu = ({ side, setside,refresh,setRefresh }) => {
     const handleTagChange = (e) => {
         const arr=[];
         if(tags.length>1){
-        tags.map((val)=>{
-            if( val===e.target.value ){
-               return
-            }
-            
-            else{
-               return arr.push(val);
-            }
-        })
+            tags.forEach(val => {
+                if (val !== e.target.value) {
+                  arr.push(val);
+                }
+              });
         if(e.target.value!=="selected"){
         arr.push(e.target.value);
         }

@@ -10,7 +10,7 @@ const RightslideBook = ({ side, setside,refresh,setRefresh }) => {
   
     const [pg, setPg] = useState(0);
     
-    const[aname,setName]=useState(localStorage.getItem("username"));
+    const[aname]=useState(localStorage.getItem("username"));
     
   
 
