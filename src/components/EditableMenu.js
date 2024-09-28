@@ -35,7 +35,7 @@ const EditableMenu = ({side,setside,object}) => {
   return (
     
 
-  <div class={side? ` absolute top-0 right-0 w-0  h-screen border border-gray-400 duration-500 bg-white ` :` absolute top-0 right-0 w-1/2 h-screen border border-gray-400 duration-500 p-5 bg-white `}>
+  <div class={side? ` absolute top-0 right-0 w-0  h-screen border border-gray-400 duration-500 bg-white  overflow-y-auto ` :` absolute top-0 right-0 w-1/2 h-screen border border-gray-400 duration-500 p-5 bg-white  overflow-y-auto`}>
     <button onClick={()=>setside(true)}><i class="ri-arrow-right-line"></i></button>
 
 <div class="flex flex-col items-start space-y-8 space-x-3 h-auto">
