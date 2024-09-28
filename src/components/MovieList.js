@@ -5,8 +5,9 @@ import axios from 'axios';
 const MovieList = () => {
   const [movieData, setMovieData] = useState(null);
   const[uploaddata,setuploaddata]=useState(null);
+  const[refresh,setrefresh]=useState(false);
   const[name,setName]=useState(localStorage.getItem("username"));
-  const[watched,setWatched]=useState(null);
+
 
 
   useEffect(()=>{
@@ -25,10 +26,11 @@ async function f() {
 
 
 
-  },[])
+  },[refresh])
   async function handlesubmit() {
     
     const p = await axios.post(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/movie/upload/${name}`, uploaddata);
+    setrefresh(!refresh);
     
   }
 
@@ -90,6 +92,7 @@ async function f() {
   };
   async function handlewatched(e){
     const p = await axios.post(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/movies/${e.target.id}`, );
+    setrefresh(!refresh);
 
   }
 

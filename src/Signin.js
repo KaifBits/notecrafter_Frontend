@@ -98,7 +98,7 @@ const Signin = () => {
                     </div>
                 </div>
             </section>
-            <img src="https://i.pinimg.com/564x/9a/12/31/9a12316963fd1e10b1b3679ad5d2f2cf.jpg" className='w-1/2 h-full bg-slate-400' alt="Background" />
+            <img src="https://i.pinimg.com/564x/9a/12/31/9a12316963fd1e10b1b3679ad5d2f2cf.jpg"   className='w-1/2 h-full bg-slate-400' alt="Background" />
         </div>
     );
 }

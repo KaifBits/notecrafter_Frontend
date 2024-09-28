@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import Recipie from './Recipie';
 import EditableMenu from './EditableMenu';
 import InsertMenu from './InsertMenu';
-import img from "./utils/cooking.png"
+
 
 const RecipieTable = () => {
     const [popup,setPopup]=useState(false);
