@@ -8,7 +8,7 @@ import RecipieTable from "./components/RecipieTable";
 import MovieList from './components/MovieList';
 import YearlyPlans from './components/YearlyPlans';
 import Singup from './Signup';
-import Recipie from "./components/Recipie";
+
 import ProtectedRoute from './ProtectedRoute'; // Import the ProtectedRoute component
 import Home from './components/Home';
 import ReadingList from './components/ReadingList';
@@ -34,12 +34,7 @@ const route = createBrowserRouter([
             <ProtectedRoute element={<RecipieTable />} /> // Protect this route
         )
     },
-    {
-        path: "/recipie",
-        element: (
-            <ProtectedRoute element={<Recipie />} /> // Protect this route
-        )
-    },
+ 
     {
         path: "/movies",
         element: (
