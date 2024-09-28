@@ -48,7 +48,7 @@ const Singup = () => {
    const handleSubmit = (e) => {
     e.preventDefault();
     if(data.password.length>8 && /[@#$%&]/.test(data.password) && data.email.length!==0){
-    axios.post('https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/register', data)
+    axios.post('https://note-backend-dusky.vercel.app/register', data)
       .then(response => {
         console.log('Form submitted successfully:');
       })

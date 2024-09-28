@@ -2,12 +2,12 @@ import React from 'react'
 import { useState } from 'react';
 
 
-const Recipie = ({pop,refe}) => {
+const Recipie = ({pop}) => {
   const [text,setText]=useState("");
 const[input,setInput]=useState(false);
-const [title,setTitle]=useState("Recipies");
+const [title]=useState("Recipies");
 const [arr,setArr]=useState(["empty"]);
-const[ingarr,setIngarr]=useState(["gajar","halua","panner","dosa","jalebi","milk"])
+const[ingarr]=useState(["gajar","halua","panner","dosa","jalebi","milk"])
 const [tags,setTags]=useState([]);
 
 function Handle(){

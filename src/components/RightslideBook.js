@@ -31,7 +31,7 @@ const RightslideBook = ({ side, setside,refresh,setRefresh }) => {
 
         try {
             console.log(obj)
-            const p = await axios.post(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/book/upload/${aname}`, obj);
+            const p = await axios.post(`https://note-backend-dusky.vercel.app/book/upload/${aname}`, obj);
             setRefresh(!refresh);
 
             console.log("data is",p.data);

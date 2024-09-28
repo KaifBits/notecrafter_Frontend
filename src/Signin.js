@@ -16,7 +16,7 @@ const Signin = () => {
         console.log(username);
         
         try {
-            const response = await axios.post("https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/login", { username, password });
+            const response = await axios.post("https://note-backend-dusky.vercel.app/login", { username, password });
             console.log("You are authorized: " + response.data);
             localStorage.setItem('username', username);
             localStorage.setItem('isAuthenticated', 'true'); // Save authentication state

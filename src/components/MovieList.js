@@ -14,7 +14,7 @@ const MovieList = () => {
     
 async function f() {
   try{
-  const p = await axios.get(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/movies/${name}`);
+  const p = await axios.get(`https://note-backend-dusky.vercel.app/movies/${name}`);
   console.log(p.data);
   setMovieData(p.data);
   }
@@ -29,7 +29,7 @@ async function f() {
   },[name,refresh])
   async function handlesubmit() {
     
-    const p = await axios.post(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/movie/upload/${name}`, uploaddata);
+    const p = await axios.post(`https://note-backend-dusky.vercel.app/movie/upload/${name}`, uploaddata);
     console.log(p);
     setrefresh(!refresh);
     
@@ -92,7 +92,7 @@ async function f() {
     }
   };
   async function handlewatched(e){
-    const p = await axios.post(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/movies/${e.target.id}`, );
+    const p = await axios.post(`https://note-backend-dusky.vercel.app/movies/${e.target.id}`, );
     console.log(p)
     setrefresh(!refresh);
 

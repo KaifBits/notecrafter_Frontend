@@ -21,7 +21,7 @@ const ReadingList = () => {
     useEffect(()=>{
       const name=localStorage.getItem("username");
     async function callapi(){
-    const p=await fetch(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/book/${name}`);
+    const p=await fetch(`https://note-backend-dusky.vercel.app/book/${name}`);
     if(p){
       const data=await p.json();
       console.log(data);

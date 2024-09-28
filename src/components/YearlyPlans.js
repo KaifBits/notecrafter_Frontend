@@ -12,7 +12,7 @@ const YearlyPlans = () => {
 useEffect(()=>{
 async function n() {
 
- const d= await axios.get(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/getplans/${name}`);
+ const d= await axios.get(`https://note-backend-dusky.vercel.app/getplans/${name}`);
  setGoalsList(d.data.plans);
 }
 n()
@@ -22,7 +22,7 @@ n()
       const arr=[...goalsList,goal] // Check if Enter is pressed and the input is not empty
       setGoalsList([...goalsList, goal]);
       console.log(arr);
-      await axios.post(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/plans/${name}`,arr);
+      await axios.post(`https://note-backend-dusky.vercel.app/plans/${name}`,arr);
        
       setGoal(''); // Clear input field
     }

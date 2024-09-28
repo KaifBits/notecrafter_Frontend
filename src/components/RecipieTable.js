@@ -24,7 +24,7 @@ const RecipieTable = () => {
     useEffect(()=>{
       const name=localStorage.getItem("username");
     async function callapi(){
-    const p=await fetch(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/menu/${name}`);
+    const p=await fetch(`https://note-backend-dusky.vercel.app/menu/${name}`);
     const data=await p.json();
     console.log(data);
     setRecipiearr(data);
@@ -41,7 +41,7 @@ callapi();
     function handleSidebar(e){
      const id=e.target.id;
      async function call(id){
-      const p=await fetch(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/user/${id}`);
+      const p=await fetch(`https://note-backend-dusky.vercel.app/user/${id}`);
       const data=await p.json();
       setobj(data);
       setSidebar(false)
