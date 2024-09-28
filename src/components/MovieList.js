@@ -26,7 +26,7 @@ async function f() {
 
 
 
-  },[refresh])
+  },[name,refresh])
   async function handlesubmit() {
     
     const p = await axios.post(`https://note-backend-g5waba8w5-rank-boards-projects.vercel.app/movie/upload/${name}`, uploaddata);

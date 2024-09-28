@@ -8,9 +8,9 @@ const Home=()=>{
     return (
         <>
      <div class="flex flex-col items-center space-y-4 px-20">
-     <img src="https://www.notion.so/images/page-cover/met_horace_pippin.jpg" class=" w-full h-80 object-cover"/>
+     <img src="https://www.notion.so/images/page-cover/met_horace_pippin.jpg" alt="box" class=" w-full h-80 object-cover"/>
        
-       <img src="https://pxraja.com/wp-content/uploads/2024/06/aesthetic-dp-43.webp" class="absolute w-40 h-40 left-40 top-52 rounded-full"/>
+       <img src="https://pxraja.com/wp-content/uploads/2024/06/aesthetic-dp-43.webp" alt="box" class="absolute w-40 h-40 left-40 top-52 rounded-full"/>
        <h1 class=" flex items-center justify-center font-extrabold text-4xl">
      Personal Home
      </h1>

@@ -16,7 +16,7 @@ async function n() {
  setGoalsList(d.data.plans);
 }
 n()
-},[])
+},[name])
  async function handleKeyPress (event) {
     if (event.key === 'Enter' && goal.trim()) {
       const arr=[...goalsList,goal] // Check if Enter is pressed and the input is not empty

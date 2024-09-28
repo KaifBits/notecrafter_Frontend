@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 
 const EditableMenu = ({side,setside,object}) => {
 
-   const[ingredients,setIngredients]=useState(["Click me!"]);
+  
    const[iinput,setIinput]=useState(false);
    const[input,setInput]=useState(false);
    const[text,setText]=useState("")
    const[ttext,settText]=useState("")
    const[tags,setTags]=useState([])
-   const [arr,setArr]=useState(object?.steps);
+  
    function seting(e){
       const text=e.target.value;
       settText(text);

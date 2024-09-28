@@ -19,13 +19,13 @@ const InsertMenu = ({ side, setside,refresh,setRefresh }) => {
     const handleTagChange = (e) => {
         const arr=[];
         if(tags.length>1){
-        tags.map((val,key)=>{
+        tags.map((val)=>{
             if( val===e.target.value ){
-               
+               return
             }
             
             else{
-                arr.push(val);
+               return arr.push(val);
             }
         })
         if(e.target.value!=="selected"){

@@ -1,20 +1,20 @@
 import React from 'react';
-import { useState,useRef,useEffect } from 'react';
+import { useState,useEffect } from 'react';
 import img from "./utils/read.png";
 import RightslideBook from './RightslideBook';
 
 const ReadingList = () => {
-  const [popup,setPopup]=useState(false);
+  
 
     const[bookarr,setBookarr]=useState(null);
-    const[sidebar,setSidebar]=useState(true);
+ 
     const[lsidebar,setLSidebar]=useState(true);
-    const[obj,setobj]=useState({})
+    
     const[refresh,setRefresh]=useState(true);
     
- console.log("side bar gere", sidebar)
+
   
-    const ref=useRef(null);
+   
 
 
 
