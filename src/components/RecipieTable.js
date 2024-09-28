@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useState} from 'react';
 import { useRef } from 'react';
-import Recipie from './Recipie';
+
 import EditableMenu from './EditableMenu';
 import InsertMenu from './InsertMenu';
 
 
 const RecipieTable = () => {
-    const [popup,setPopup]=useState(false);
+    const popup=true;
 
     const[recipiesarr,setRecipiearr]=useState(null);
     const[sidebar,setSidebar]=useState(true);
@@ -17,7 +17,7 @@ const RecipieTable = () => {
     
  console.log("side bar gere", sidebar)
   
-    const ref=useRef(null);
+    
 
 
 
@@ -143,7 +143,7 @@ return <span class="border border-gray-400 w-auto pl-3 pr-3 rounded-md  inline-b
       { popup?
       <>
      
-    <Recipie pop={setPopup} refe={ref}/>
+   
     </>:<></>
     }
       </div>
