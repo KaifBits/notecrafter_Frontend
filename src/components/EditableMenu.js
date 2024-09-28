@@ -13,7 +13,7 @@ const EditableMenu = ({side,setside,object}) => {
       const text=e.target.value;
       settText(text);
       const arr=text.split(",");
-      setIngredients(arr);
+     
 
    }
    function han(e){
