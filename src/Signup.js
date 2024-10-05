@@ -68,7 +68,7 @@ const Singup = () => {
     <div className='flex h-screen'>
     <section className="bg-purple-200 w-full sm:w-2/3 min-h-screen overflow-hidden">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <Link to="#" class="flex items-center mb-6 text-2xl font-semibold text-black dark:text-white">
+        <Link to="#" class="flex items-center mb-6 text-2xl font-semibold text-black ">
             
             NoteCrafter    
         </Link>
@@ -80,17 +80,17 @@ const Singup = () => {
                 </h1>
                 <form class="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
                 <div>
-                        <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Your Name</label>
-                        <input type="text" name="username" id="username" onChange={hanldeEvenet} class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="sk kaif rahaman" required=""/>
+                        <label for="text" class="block mb-2 text-sm font-medium text-gray-900 ">Enter Your Name</label>
+                        <input type="text" name="username" id="username" onChange={hanldeEvenet} class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="sk kaif rahaman" required=""/>
                     </div>
                     <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Your email</label>
-                        <input type="email" name="email" id="email" onChange={hanldeEvenet}  class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required=""/>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Enter Your email</label>
+                        <input type="email" name="email" id="email" onChange={hanldeEvenet}  class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required=""/>
                     </div>
 
                     <div>
-                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Your Password</label>
-                        <input type="password" name="password" id="password" onChange={hanldeEvenet}  placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required=""/>
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Enter Your Password</label>
+                        <input type="password" name="password" id="password" onChange={hanldeEvenet}  placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required=""/>
                     <div className='text-red-500'>{warning}</div>
                     <span className='text-red-500'>{special}</span>
                     </div>
