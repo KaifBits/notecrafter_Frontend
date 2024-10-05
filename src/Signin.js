@@ -40,7 +40,7 @@ const Signin = () => {
                     <img src={img} alt="Logo" className='size-16 left-40' />
                     <div className="w-4/5 sm:w-full md:w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 ">
                         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-                            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+                            <h1 className="text-md font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                                 Sign in to your account
                             </h1>
                             <form className="space-y-4 md:space-y-6" onSubmit={login}>
