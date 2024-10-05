@@ -65,15 +65,15 @@ const Singup = () => {
 
 
   return (
-    <div className='flex'>
-    <section className="bg-purple-200 w-2/3">
+    <div className='flex h-screen'>
+    <section className="bg-purple-200 w-full sm:w-2/3 min-h-screen overflow-hidden">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <Link to="#" class="flex items-center mb-6 text-2xl font-semibold text-black dark:text-white">
             
             NoteCrafter    
         </Link>
         <img src={img} alt="Logo" className='size-16 left-40' />
-        <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div class="w-2/3 md:w-full sm:w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                     Sign Up to your account
@@ -110,7 +110,7 @@ const Singup = () => {
         </div>
     </div>
   </section>
-    <img src="https://i.pinimg.com/564x/9a/12/31/9a12316963fd1e10b1b3679ad5d2f2cf.jpg" alt="gotit" className='w-1/2 h-full  bg-slate-400' />
+    <img src="https://i.pinimg.com/564x/9a/12/31/9a12316963fd1e10b1b3679ad5d2f2cf.jpg" alt="gotit" className='w-0 sm:w-1/2  h-full bg-slate-400'  />
     </div>
   )
 }
