@@ -63,7 +63,7 @@ const InsertMenu = ({ side, setside,refresh,setRefresh }) => {
     };
 
     return (
-        <div className={`absolute top-0 left-0 pl-3 h-screen border border-gray-400 duration-500 bg-white ${side ? 'w-0' : 'w-1/2'} overflow-y-auto`}>
+        <div className={`absolute top-0 left-0 pl-0 h-screen border border-gray-400 duration-500 bg-white ${side ? 'w-0 ' : 'w-1/2 pl-5'} overflow-y-auto`}>
             <button onClick={() => setside(true)}>
                 <i className="ri-arrow-left-line"></i>
             </button>

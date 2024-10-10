@@ -74,7 +74,7 @@ callapi();
       {/* <i class="ri-edit-fill"></i> */}
       <h1 className=' flex items-center justify-center font-bold text-4xl h-24 w-full mt-4 '>Recipies 🍽</h1>
       <div className='flex justify-center items-center text-lg font-bold text-gray-500'>“I feel a recipe is only a theme which an intelligent cook can play each time with a variation.” — Madam Benoit</div>
-      <button type="submit" className=" bg-red-300 hover:bg-pink-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm text-black px-5 py-2.5 me-2 mb-2 dark:bg-pink-400 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-blue-800"  onClick={()=>setLSidebar(false)}> + add recipie</button>
+      <button type="submit" className=" bg-red-300 hover:bg-pink-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm text-black px-5 py-2.5 me-2 mb-2 dark:bg-pink-400 dark:hover:bg-pink-700 focus:outline-none dark:focus:ring-blue-800"  onClick={()=>{setLSidebar(false);   window.scrollTo({ top: 0, behavior: 'smooth' });}}> + add recipie</button>
     <table class="border border-gray-400 m-8  ">
     { recipiesarr?.length? <thead class="border border-gray-300">
         <th class="border border-gray-300  font-semibold text-amber-950">As Name <i class="ri-pencil-line" onClick={()=>setLSidebar(false)}></i></th> 
@@ -97,7 +97,7 @@ return (
     
     
     {/* <i class="ri-eye-line ml-5" onClick={()=>setPopup(true)} ref={ref}></i> */}
-    <i class="ri-eye-line ml-5" id={val._id} onClick={(e)=>handleSidebar(e)}></i> </td>
+    <i class="ri-eye-line ml-5" id={val._id} onClick={(e)=>{handleSidebar(e);   window.scrollTo({ top: 0, behavior: 'smooth' });}}></i> </td>
     
     <td class="border border-gray-300 w-96 h-auto p-4 break-words overflow-wrap break-word space-x-3">{val?.tags?.map((val)=>{
 

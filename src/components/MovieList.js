@@ -101,17 +101,17 @@ async function f() {
   return (
     <>
     
-    <div className='flex flex-col justify-center items-center'>
-      <div className='w-full h-60 bg-pink-600'></div>
-      <img src={img} className="absolute size-36 left-40 top-52 " alt="Movie Background" />
+    <div className='flex flex-col justify-center items-center '>
+      <div className='w-full h-16 md:h-60 bg-pink-600'></div>
+      <img src={img} className="absolute size-8 md:size-36 left-10 top-10 md:left-40 md:top-52 " alt="Movie Background" />
       <div className='w-full h-full'>
-        <h1 className='flex items-end justify-center font-bold text-4xl h-44 w-80 ml-16 mb-11'>
+        <h1 className='flex items-end justify-center font-bold text-xl md:text-4xl md:h-44 md:w-80 ml-16 mb-11'>
           Movies List
         </h1>
       </div>
-      <div className='flex gap-x-8  items-center w-11/12 h-full'>
+      <div className='flex gap-x-8   items-center w-1/2 md:w-11/12 h-full'>
         <div className=' w-2/4 h-screen'>
-          <h1 className='font-semibold text-2xl pl-10'>Want to Watch</h1>
+          <h1 className='font-semibold text-xs md:text-2xl   '>Want to Watch</h1>
           <input
             type="text"
             placeholder="Paste IMDb movie link here..."
@@ -130,7 +130,7 @@ async function f() {
 {movieData?.map((val)=>{
           if(!val.watched){
             return(
-              <div className=" flex mt-4 h-44  ">
+              <div className=" flex mt-4 h-auto   ">
               <div>
                 <button class="text-white bg-orange-800 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" id={val._id} onClick={(e)=>handlewatched(e)}>watched</button>
               <h2 className="font-semibold text-xl">{val.title}</h2>
@@ -149,14 +149,14 @@ async function f() {
           }
         </div>
       <div className=' w-2/4 h-screen'>
-        <h1 className='font-semibold text-2xl pr-10 pt-2'>Watched</h1>
+        <h1 className='font-semibold text-xs md:text-2xl w-full  '>Watched</h1>
         {movieData?.map((val)=>{
           if(val.watched){
             return(
-              <div className=" flex mt-4 h-44  ">
-              <div>
+              <div className=" flex mt-4 h-auto space-x-20    ">
+              <div className='h-auto w-2/3 '>
               <h2 className="font-semibold text-xl">{val.title}</h2>
-              <p className="text-gray-700 text-lg mt-2">{val.plot}</p>
+              <p className="text-gray-700 text-sm md:text-lg mt-2 h-auto  w-full  break-words">{val.plot}</p>
               </div>
               {val.poster && <img src={val.poster} alt={val.title} className="w-32 h-44 ml-2 object-cover " />}
              </div>
